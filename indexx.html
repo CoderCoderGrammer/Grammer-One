@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #feafaf;
+        }
+        details summary{
+            /* background-color: rgb(21, 0, 40); */
+            /* padding: 15px 10px; */
+            color: #fff;
+            font-size: 22px;
+        }
+        details{
+            width: 50%;
+            border: 3px solid rgb(255, 255, 255);
+            padding: 15px 14px;
+            background-image: linear-gradient(to bottom, #333, #000000fa);
+        }
+        details{
+            text-align: justify;
+            font-size: 18px;
+            color: rgb(250, 250, 250);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin: 0 0 150px 0;
+        }
+        hr{
+            width: 95%;
+            margin: 10px auto;
+            border: 1px solid green;
+        }
+        .ex{
+            margin: 0;
+            height: 40vh;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 5% 0 5%;
+            overflow: hidden;
+        }
+    
+
+        nav{
+            padding-top: 19px;
+            width: 70vw;
+            background-color: rgb(36, 21, 21);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        a{
+            position: relative;
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+            font-size: 18px;
+            letter-spacing: .5px;
+        }
+        a::before,
+        a::after{
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 0px;
+            background-color: orangered;
+            transition: .5s;
+        }
+        a::after{
+            left: 0;
+            bottom: -10px;
+        }
+        a::before{
+            right: 0;
+            top: -10px;
+        }
+        a:hover::before,
+        a:hover::after{
+            width: 100%;
+        }
+
+        .showcase{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        .showcase video{
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+        .title{
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            font-size: 100px;
+            color: #fff;
+        }
+        .grid > div{
+            background-color: rgb(164, 33, 33);
+            margin: 0 10px;
+            padding: 10px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+            grid-auto-rows: 6rem;
+        }
+
+        .imgg{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="ex">
+
+        <details>
+            <summary>
+                This is the path that I chose, but what ever path you?
+            </summary>
+            <hr>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> 
+        </details>
+        <details>
+            <summary>
+                This is the path that I chose, but what ever path you?
+            </summary>
+            <hr>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> 
+        </details>
+        <details>
+            <summary>
+                This is the path that I chose, but what ever path you?
+            </summary>
+            <hr>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> 
+        </details>
+    </div>
+  
+
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Hire me</a>
+    </nav>
+    <br><br>
+
+    <!-- <section class="showcase">
+        <video  src="./imgg/CSS Most Asked Interview Question #css #short #shorts #developer #interview #javascript #react #best (1).mp4" autoplay loop></video>
+        <h1 class="title">BEYOND</h1>
+    </section> -->
+
+
+    <div class="grid">
+        <div class="child-">ONE</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+        <div class="child-4">4</div>
+        <div class="child-5">4</div>
+        <div class="child-6">4</div>
+    </div>
+
+    <div class="imgg">
+        <img width="120px" src="./imgg/pix.jpg" alt="">
+    </div>
+</body>
+</html>
